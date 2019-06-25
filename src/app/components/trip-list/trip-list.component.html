@@ -1,0 +1,5 @@
+<ion-list>
+    <ion-item *ngFor="let trip of (trips | async)" (click)="clickElement(trip)">
+      <app-trip-card-item [trip]="trip"></app-trip-card-item>
+    </ion-item>
+</ion-list>

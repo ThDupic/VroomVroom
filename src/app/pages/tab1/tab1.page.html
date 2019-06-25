@@ -1,0 +1,11 @@
+<app-tab-header [title]="title"></app-tab-header>
+
+<ion-content>
+  <app-trip-list [trips] = "trips" (tripElementClicked)="getTripDetail($event)"></app-trip-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="openAddTripModal()">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

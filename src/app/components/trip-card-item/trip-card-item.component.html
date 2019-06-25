@@ -1,0 +1,20 @@
+<ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto">
+        <ion-avatar>
+          <img src="http://via.placeholder.com/50x50">
+        </ion-avatar>
+      </ion-col>
+
+      <ion-col>
+        <ion-row>
+          <ion-card-title>{{trip.from}} to {{trip.to}}</ion-card-title>
+        </ion-row>
+        <ion-row>
+          <ion-card-subtitle>{{trip.startAt.seconds * 1000 | date:'MMM d, y, h:mm:ss a'}}</ion-card-subtitle>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>

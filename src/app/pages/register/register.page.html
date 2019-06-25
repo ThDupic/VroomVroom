@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div padding>
+          <ion-input type="mail" placeholder="Email" [(ngModel)]="mail"></ion-input>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+          <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword"></ion-input>
+        </div>
+
+        <div padding>
+          <ion-button (click)="signUp()" expand="block">Valider</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

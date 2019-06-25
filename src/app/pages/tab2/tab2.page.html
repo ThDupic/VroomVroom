@@ -1,0 +1,5 @@
+<app-tab-header [title]="Search"></app-tab-header>
+
+<ion-content>
+  <app-trip-list [trips]="trips" (tripElementClicked)="getTripDetail($event)"></app-trip-list>
+</ion-content>

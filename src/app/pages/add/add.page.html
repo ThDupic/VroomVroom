@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="addTrip()">
+    <ion-item>
+      <ion-label>From :</ion-label>
+      <ion-input type="text" [(ngModel)]="fromField" name="from"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>To :</ion-label>
+      <ion-input type="text" [(ngModel)]="toField" name="to"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Price :</ion-label>
+      <ion-input type="number" [(ngModel)]="priceField" name="price"></ion-input>
+    </ion-item>
+    <ion-button type="submit">Submit</ion-button>
+  </form>
+</ion-content>
